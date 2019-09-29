@@ -6,6 +6,7 @@ class Flight():
         self.orgin = origin
         self.time = time
         self.passenger_list = []
+        self.list_of_flights = []
 
 
     def check_in(self, pass_port_num):
@@ -14,3 +15,12 @@ class Flight():
             return 'Passport number accepted'
         else:
             return 'Invalid Passport number. DO not let passenger/employee board flight'
+
+    def add_passanger(self, passanger):
+        return self.passenger_list.append(passanger)
+
+    def getPassenger_list(self):
+        return self.passenger_list
+
+    def add_to_flight_list(self, list_of_flights):
+        return self.list_of_flights

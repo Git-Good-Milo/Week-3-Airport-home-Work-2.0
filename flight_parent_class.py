@@ -19,7 +19,7 @@ class Flight():
     def add_passanger(self, passanger):
         return self.passenger_list.append(passanger)
 
-    def getPassenger_list(self):
+    def getPassenger_list(self, passanger):
         return self.passenger_list
 
 
@@ -27,5 +27,7 @@ class Flight():
         return self.list_of_flights
 
     def select_flight(self, flight_num, destination, time):
-        return (f'Fight: {flight_num} will be traveling to {destination} at {time})
+        return (f'Fight: {flight_num} will be traveling to {destination} at {time}')
+
+
 

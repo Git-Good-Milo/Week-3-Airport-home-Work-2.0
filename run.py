@@ -29,14 +29,15 @@ flight2.add_passanger(passanger6)
 
 list_of_flights =  [flight1,flight2]
 capacity = 0
-print('Welcome to London Gatwick International Airport! ' )
+
 for flight in list_of_flights:
-     if flight_num == 1:
+    for passengers in flight.passenger_list:
+        print(passengers.f_name)
+# Loop over flights and print flight details
 
-    passangers = flight1.getPassenger_list()
 
-
-    print(passangers)
+    # passangers = flight.passenger_list
+    # print(passangers[1.])
 
     # for passanger in passangers:
     #
@@ -50,3 +51,13 @@ for flight in list_of_flights:
 #     print(flight.getPassenger_list())
 
 
+# print('Welcome to London Gatwick International Airport! Would you like to book a ticket today?')
+# user_input = input()
+# if user_input == 'yes':
+#     print('Where would you like to go?')
+# else:
+#     print('Have a nice day')
+#
+# user_input1 = input()
+# if user_input1 == 'Dubai'.capitalize():
+#     print('Let me check if we have any space left')

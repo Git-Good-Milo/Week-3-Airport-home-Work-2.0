@@ -1,9 +1,9 @@
-# from flight_parent_class import *
-# from people_class import *
-class Passenger():
+#from flight_parent_class import *
+from people_class import *
+class Passenger(People):
 
-    def __init__(self, f_name, l_name, boarding_num):
-        #super().__init__(flight_number, destination, origin, time, pass_port_num,  f_name, l_name)
+    def __init__(self, flight_number, destination, origin, time, pass_port_num,f_name, l_name, boarding_num):
+        super().__init__(flight_number, destination, origin, time, pass_port_num,  f_name, l_name)
         self.f_name = f_name
         self.l_name = l_name
         self.ticket_num = boarding_num

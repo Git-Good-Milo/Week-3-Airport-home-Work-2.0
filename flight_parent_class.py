@@ -6,7 +6,7 @@ class Flight():
         self.orgin = origin
         self.time = time
         self.passenger_list = []
-        self.list_of_flights = []
+        #self.list_of_flights = []
 
 
     def check_in(self, pass_port_num):
@@ -22,5 +22,10 @@ class Flight():
     def getPassenger_list(self):
         return self.passenger_list
 
-    def add_to_flight_list(self, list_of_flights):
+
+    def add_to_flight_list(self, list_of_flights, ):
         return self.list_of_flights
+
+    def select_flight(self, flight_num, destination, time):
+        return (f'Fight: {flight_num} will be traveling to {destination} at {time})
+
